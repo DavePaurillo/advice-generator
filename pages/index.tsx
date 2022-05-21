@@ -6,9 +6,6 @@ import diceIcon from "../public/icon-dice.svg";
 import { useState } from "react";
 import { server } from "../config";
 
-// TODO setup config equal to vercel server
-// put this into github
-
 const Home: NextPage = ({ initSlip }: any) => {
     const [slip, setSlip] = useState({
         id: initSlip.id,
