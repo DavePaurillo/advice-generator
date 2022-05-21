@@ -47,7 +47,8 @@ export default Home;
 
 export const getStaticProps = async () => {
     const res = await fetch("https://api.adviceslip.com/advice");
-    const initSlip = await res.json();
+    const data = await res.json();
+    const initSlip = await data.slip;
 
     return {
         props: {
