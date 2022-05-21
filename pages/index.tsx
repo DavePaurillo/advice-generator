@@ -46,7 +46,7 @@ const Home: NextPage = ({ initSlip }: any) => {
 export default Home;
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${server}/api/slip`);
+    const res = await fetch("https://api.adviceslip.com/advice");
     const initSlip = await res.json();
 
     return {
